@@ -5,13 +5,13 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from "redux";
 import allReducers from './reducers/index';
 import {Provider} from 'react-redux';
-import AppController from "./container/AppContainer";
+import AppContainer from "./container/AppContainer";
 
 let store=createStore(allReducers);
 
 ReactDOM.render(
     <Provider store={store}>
-        <AppController />
+        <AppContainer />
     </Provider>, document.getElementById('root'));
 registerServiceWorker();
 
