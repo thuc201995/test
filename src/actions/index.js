@@ -16,7 +16,7 @@ export const setUser=()=>{
 
 export const logout=()=>{
     return{
-        type: actionTypes.SET_USER,
+        type: actionTypes.LOGOUT,
         role: "ANOMINOUS"
     }
 }
